@@ -6,6 +6,10 @@ textBox.addEventListener('input', function(){
     let char = text.length;
     document.getElementById('char').innerHTML = char;
 
+    text = text.trim();
     let words = text.split(" ");
-    document.getElementById('word').innerHTML = words.length;   
+    let cleanList = words.filter(function(ele){
+        return ele != "";
+    })
+    document.getElementById('word').innerHTML = cleanList.length;   
 })
