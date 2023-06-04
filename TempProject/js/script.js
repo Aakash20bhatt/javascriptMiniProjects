@@ -1,5 +1,3 @@
-
-
 var cel = document.getElementById('cel')
 var fah = document.getElementById('fah')
 
